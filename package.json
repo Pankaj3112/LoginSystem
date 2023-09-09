@@ -1,0 +1,28 @@
+{
+  "name": "loginsystem",
+  "version": "1.0.0",
+  "description": "A full fledged login system",
+  "main": "index.js",
+  "dependencies": {
+    "connect-mongo": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "0.0.1-security",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^6.9.5",
+    "npm": "^10.0.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj",
+  "license": "ISC"
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome back</h1>
+        <form action="/users/create-session" method="POST">
+
+            <div class="input">
+                <input type="email" name="email" id="email" required>
+                <label class="label-unactive" for="email">Email address</label>
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="password" required>
+                <label class="label-unactive" for="password">Password</label>
+            </div>
+            <div>
+                <button id="submit-btn" type="submit">Continue</button>
+            </div>
+        </form>
+        <p id="already-have-account">Dont have an account? <a href="/users/sign-up">Sign up</a></p>
+        
+        <p id="forgot-password"> <a href="/users/forgot-password">Forgot password</a></p>
+
+        <p id="or">OR</p>
+
+        <a href="/users/auth/google" ><button id="continue-with-google">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="google-logo">
+            <p>Continue with Google</p>
+        </button></a>
+    </div>
+    
+    <script src="/js/signup.js"></script>
+</body>
+</html>
